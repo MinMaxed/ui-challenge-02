@@ -4,12 +4,12 @@ $('.options:nth-child(even)').css('background-color','lightgray');
 $('options:first-child').css('opacity', '.5');
 $('options:first-child').on('focus', clearFirstOption);
 
-$('.username').css('border-color','black');
+$('.username').css('border-color','2px', 'black');
 $('.buttons').css('border','none');
 $('.buttons2').css('border','none');
 
 
-$('input').on('error',invalidSubmittion);
+$('.username:invalid').on('submit',invalidSubmittion);
 
 function invalidSubmittion() {
 $('input').css('border-color','red');
